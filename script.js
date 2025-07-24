@@ -28,20 +28,17 @@ selectAnimal.addEventListener('change', () => {
 
   breedOptions.forEach((option) => {
     const breedType = option.getAttribute('data-breed')
-
-    if (selectedAnimal !== breedType) {
-      option.hidden = true
-    } else {
-      option.hidden = false
-    }
+    option.hidden = selectedAnimal !== breedType
   })
 
   //   9. check if the breeds select value is NOT equal to an empty string
 
-  //     10. if it's not an empty string, set the breeds select value to the second option's value
-  if (selectBreed !== '') {
+  //   10. if it's not an empty string, set the breeds select value to the second option's value
+
+  /*   if (selectBreed.value !== '' && selectBreed.value !== 'reselect') {
     selectBreed.value = 'reselect'
-  }
+  } */
+  selectBreed.value = ''
 })
 
 // TESTING TIP: Select an animal, select a matching breed, then change
