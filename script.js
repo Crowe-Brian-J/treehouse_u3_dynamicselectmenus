@@ -38,6 +38,8 @@ selectAnimal.addEventListener('change', () => {
   /*   if (selectBreed.value !== '' && selectBreed.value !== 'reselect') {
     selectBreed.value = 'reselect'
   } */
+
+  //The above code for 9 and 10 seems clunky for an end user - switched to below - list still resets properly
   selectBreed.value = ''
 })
 
