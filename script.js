@@ -9,7 +9,7 @@ const selectAnimal = document.querySelector('#animals')
 const selectBreed = document.querySelector('#breeds')
 
 // 3: select all of the option elements with a [data-theme] attribute and store them in a variable
-const breedOptions = document.querySelectorAll('[data-breed')
+const breedOptions = document.querySelectorAll('[data-breed]')
 
 selectBreed.disabled = true
 
